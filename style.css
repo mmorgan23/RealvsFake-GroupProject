@@ -1,0 +1,42 @@
+h1 {
+	color: white !important;
+	font-family: 'Exo', sans-serif;
+	
+}
+
+.jumbotron {
+	/*background-color: red;*/
+	background-image: url("breakingnews.jpeg");
+	margin-bottom: 5px !important;
+	opacity: 0.8;
+
+}
+
+
+h3{
+	color: white;
+}
+
+h2{
+	color: white;
+}
+
+h4{
+	color: white;
+}
+
+#container {
+	width: 1200px;
+}
+
+#quizarea {
+	background-color:  #0000A0;
+
+}
+
+#footer {
+	background-image: url("breakingnews.jpeg");
+	margin-top: 5px;
+	opacity: 0.8;
+
+}
