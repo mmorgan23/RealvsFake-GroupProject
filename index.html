@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>The News Experiment</title>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+	<meta charset="utf-8">
+  	<title>The News Experiment</title>
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
@@ -17,84 +17,58 @@
 
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+
 	<link href="https://fonts.googleapis.com/css?family=Exo:900" rel="stylesheet">
           
    	<link rel="stylesheet" href="style.css">
 
    	<script type="text/javascript" src=script.js></script>
 
-  
   </head>
 
-<center><div id= "container">
-	
-
-	<div class="jumbotron">
-	  <h1><center>The News Experiment</center></h1>
-	  <h3><center><strong>Can you spot the B.S.? Take the Quiz and find out!</strong></center></h3>
-	</div>
-
-
-	<div class="popup" onclick="myFunction()">Click me to toggle the popup!
-  		<span class="popuptext" id="myPopup">A Simple Popup!</span>
-  		<input id="name" name="name" placeholder="Name" type="text">
-		<input id="email" name="email" placeholder="Email" type="text">
-		<textarea id="msg" name="message" placeholder="Message"></textarea>
-	</div>
-
-	<div id= "quizarea">
-	<br>
-	<h2>Timer 00:20</h2>
-	<center><a class="waves-effect waves-light btn dark-yellow">start</a>
-
-
+<body>
 <br>
 <br>
-	<h4><center>Click "start" to view first story. If you think the story is real or if you think that it is fake click on the correct button below.</center></h4>
-	
-	<br>
+	<div id="container">
 
-		<center><img src="burgandy.png" alt="Ron Burgandy"></center>
+	<div id="info">
+		<h1><center>The "News" Experiment</center></h1>
+	  
+<!-- 			<img src="assets/ticket.jpg" alt="ticket" id="tick">
+ -->			<!-- <p>Climb on board for a beautiful scenic train ride that always gets you to your destination on time.</p> -->
+			</center>
+		</div>
+		<center><div id="header"><img src="ronheadshot.jpg" alt="header image">
+		</div></center>
+		<br>
+		
+		<center><div id="timeTitle"><h3><strong>Can you spot the B.S.? Take the Quiz and find out!</strong></h3></div></center>
+		<br>
+		<!--Div with the train times and information-->
+		<div class="row">
+			<!--Columns for the train times and info are set up within this div-->
+				<div class="col-md-5">
+				<h4><strong>Google Maps API</strong></h4>
+				<p id="api"><img src="googleimage.png" width=300px; height=300px;></p>
+				</div>
+				
+				<div class="col-md-6">
+				<h4><strong>Quiz Questions</strong></h4>
+				<p id="quizquestions"><img src="rongiphy.gif"></p>
+				</div>		
 
-	<br>
-	<br>
-		<center><a class="waves-effect waves-light btn">Real</a><a class="waves-effect waves-light btn">Fake</a></center>
-	<br>
-	<br>
-
+			</div>
+			  <div id="footer">
+                <p><strong>Disclaimer: The fake news stories on this website are used for entertainment purposes only and should not redistributed over the Internet as a factual source.</strong></p>
+              </div>
 
 	</div>
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
 
-
-<footer class="page-footer black" id="footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Disclaimer</h5>
-                <p class="grey-text text-lighten-4">The fake news stories on this website are used for entertainment purposes only and should not redistributed over the Internet as a factual source.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Real News Sources</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2017 Copyright The News Experiment
-       
-            </div>
-          </div>
-        </footer>
-
-</div></center>
-
-
+<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+  
+  <script type="text/javascript" src=assets/script.js></script>
 </body>
 
 </html>
