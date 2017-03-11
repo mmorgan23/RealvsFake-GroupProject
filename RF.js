@@ -16,6 +16,7 @@ $.ajax(Onion).done(function (response) {
   console.log(response);
   console.log(response.posts[0].title);
 
+
   // Create onionArray with Titles from Onion search results
 
 for (var i = 0; i < response.posts.length; i++) {
