@@ -42,10 +42,11 @@
         <center><div id="header"><img src="ronheadshot.jpg" id="ron" alt="header image">
         </div></center>
         <br>
-        
+        <center><a href="https://www.facebook.com/realvsfakenews" target = "blank"><img src="facebook_like_LG.gif" id="fb" alt="FB logo"></center></a>
         <center><div id="timeTitle"><h3><strong>Can you spot the B.S.? Take the Quiz and find out!</strong></h3></div></center>
         <br>
-     <a id="OpenDialog" href="#">Start button</a>
+     <a id="OpenDialog" href="#"><center><h3><strong>Click Here ------> START QUIZ <------ Click Here</strong></h3></center></a>
+
   		<div id="dialog" title="">
         <form>
      
@@ -68,23 +69,31 @@
         <div class="row">
             <!--Columns for the train times and info are set up within this div-->
                 <div class="col-md-6">
-                <h4><strong>Google Maps API</strong></h4>
+                <center><h4><strong>Google Maps API</strong></h4></center>
                 <div id="div1"></div>
                 <div id="map"></div>
                 </div>
                 
-                <div class="col-md-6">
-                <h4><strong>Quiz Questions</strong></h4>
-                <p id="quizquestions">
+                <div class="col-md-6" id="quizarea">
+                <center><h4><strong>Quiz Questions</strong></h4>
+                <div id="quiz">
+                <br>
+                <strong><p id="quizquestions">
         <!-- <img src="rongiphy.gif"> -->
         </p>
                 <button type="button" id="real_button">Real</button>
                 <button type="button" id="fake_button">Fake</button>
+                <br>
                 <p id="quizoutput">Output</p>
+                <br>
                 <p id="rightguess">Number Right</p>
-                <p id="wrongguess">Number Wrong</p>
-                </div>        
-            </div>
+                <p id="wrongguess">Number Wrong</p></strong>
+        		
+        		<center><img src="fakenewsimg.jpg" id="fakenews" alt="fakenews"></center>
+
+                </div> 
+                </div>       
+            </div></center>
               <div id="footer">
                 <p><strong>Disclaimer: The fake news stories on this website are used for entertainment purposes only and should not redistributed over the Internet as a factual source.</strong></p>
               </div>
@@ -123,7 +132,8 @@ function failure(){
 }
 </script>
 
-<!-- <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/redmond/jquery-ui.css" rel="stylesheet" type="text/css"/> -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
    
    </body>
  <script type="text/javascript">
@@ -132,7 +142,7 @@ function failure(){
        $(document).ready(function () {
            $("#OpenDialog").click(function () {
             $("#dialog").show();
-               $("#dialog").dialog({modal: true, height: 400, width: 1005 });
+               $("#dialog").dialog({modal: true, height: 400, width: 900 });
            });
        });
    </script>
