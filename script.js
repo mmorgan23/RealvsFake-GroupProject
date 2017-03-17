@@ -12,12 +12,12 @@
     var age = "";
     var city = "";
 
-  $("#quizarea").hide();
-  
+  $("#quizquestions").hide();
+
   $("#startquiz").one("click", function(event){
     event.preventDefault();
     $("#dialog").dialog("close");
-    $("#quizarea").show();
+    $("#quizquestions").show();
 
     //set the variables equal to the HTML Id's for inserting text
     name = $("#un").val().trim();

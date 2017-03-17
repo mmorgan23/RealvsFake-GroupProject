@@ -97,10 +97,14 @@ hr {
 }
 
 #fb{
-width: 200px;
+width: 120px;
 }
 
 #fakenews {
 	width: 150px;
 	height: 80px;
+}
+
+h4 {
+	color: 6F2828;
 }
