@@ -11,9 +11,13 @@
     var name = "";
     var age = "";
     var city = "";
+
+  $("#quizarea").hide();
+  
   $("#startquiz").one("click", function(event){
     event.preventDefault();
     $("#dialog").dialog("close");
+    $("#quizarea").show();
 
     //set the variables equal to the HTML Id's for inserting text
     name = $("#un").val().trim();
@@ -77,14 +81,16 @@ $.ajax(Onion).done(function (response) {
   function stop() {
         clearTimeout(processResults);
       if (correctGuess > 5) {
-        $("#quizarea").html("<h2>" + "Game Over" + "</h2>" +"<br>" + "Winner  Winner");
+        $("#quizarea").html("<h2>" + "Game Over:" + "</h2>" +"<br>" + "Winner  Winner" + "<br" + ('<img>',{id:'ron',src:'ronheadshot.jpg'} ));
+        // $('#quiz').prepend($('<img>',{id:'ron',src:'ronheadshot.jpg'}))
         questionNumber = 0;
         correctGuess = 0;
         incorrectGuess = 0;
         
     } else
     {
-        $("#quizarea").html("<h2>" + "Game Over" + "</h2>" +"<br>" + "Looser  Looser");
+        $("#quizarea").html("<h2>" + "Game Over" + "</h2>" +"<br>" + "Looser  Looser"('<img>',{id:'ron',src:'ronheadshot.jpg'}) );
+       	$('#quiz').prepend($('<img>',{id:'ron',src:'ronheadshot.jpg'}))
         questionNumber = 0;
         correctGuess = 0;
         incorrectGuess = 0;
