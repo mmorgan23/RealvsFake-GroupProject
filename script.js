@@ -81,7 +81,7 @@ $.ajax(Onion).done(function (response) {
   function stop() {
         clearTimeout(processResults);
       if (correctGuess > 5) {
-        $("#quizarea").html("<h2>" + "Game Over:" + "</h2>" +"<br>" + "Winner  Winner" + "<br" + ('<img>',{id:'ron',src:'ronheadshot.jpg'} ));
+        $("#quizarea").html("<h2>" + "Game Over:" + "</h2>" +"<br>" + "Winner  Winner");
         // $('#quiz').prepend($('<img>',{id:'ron',src:'ronheadshot.jpg'}))
         questionNumber = 0;
         correctGuess = 0;
@@ -89,8 +89,8 @@ $.ajax(Onion).done(function (response) {
         
     } else
     {
-        $("#quizarea").html("<h2>" + "Game Over" + "</h2>" +"<br>" + "Looser  Looser"('<img>',{id:'ron',src:'ronheadshot.jpg'}) );
-       	$('#quiz').prepend($('<img>',{id:'ron',src:'ronheadshot.jpg'}))
+        $("#quizarea").html("<h2>" + "Game Over" + "</h2>" +"<br>" + "Loser  Loser");
+       	// $('#quiz').prepend($('<img>',{id:'ron',src:'ronheadshot.jpg'}))
         questionNumber = 0;
         correctGuess = 0;
         incorrectGuess = 0;

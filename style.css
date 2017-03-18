@@ -108,3 +108,7 @@ width: 120px;
 h4 {
 	color: 6F2828;
 }
+
+#fake_button {
+    margin-left: 10px;
+}
